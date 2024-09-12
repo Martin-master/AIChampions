@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+java {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+task copyReact(type: Copy){
+    from 'frontend/build' into 'src/main/resources/static'
+}
+build.dependsOn copyReact
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
