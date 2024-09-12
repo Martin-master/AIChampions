@@ -1,6 +1,6 @@
 You can run the backend by clicking the green arrow next to the main method in your Main.java file.
 For the frontend, you can use IntelliJ's terminal and navigate to the frontend directory and run 'npm start'.
-Remember to run 'npm run build' in the frontend directory before running the build task in Gradle to ensure the latest version of the frontend is copied to the backend resources.
+Remember to run  'npm run build' in the frontend directory before running the build task in Gradle to ensure the latest version of the frontend is copied to the backend resources.
 
 To access HelloController in browser go to the following URL:
 http://localhost:8080/api/hello
